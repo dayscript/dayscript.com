@@ -1,0 +1,1901 @@
+/*
+ * @file
+ * global.styles
+ *
+ * Styles you add here will load for all device sizes, they are "global", as
+ * opposed to "responsive" styles, which only load for a given breakpoint (media
+ * query) that you set in theme settings. See the README for more details.
+ *
+ *
+ * How to use this file:
+ * --------------------
+ *
+ * There are many empty selectors and some basic styles to act as a guide.
+ * Nothing is set in stone and you can change anything - even delete all of it
+ * and start with your own clean slate.
+ *
+ * To FORCE PRINT all selectors you can search and replace a single { (opening
+ * curly brace) and insert an empty comment. This is very useful in conjuction
+ * with FireSass: https://addons.mozilla.org/en-US/firefox/addon/firesass-for-firebug/
+ *
+ * See global.base also which includes normalize.css and some additional
+ * helper classes and base styles.
+ */
+/* =============================================================================
+ *   Base
+ * ========================================================================== */
+/* 
+ * To preserve theme settings never apply font properties to the HTML element.
+ * This is critically important if you are using the Responsive JavaScript
+ * feature as this relies on being able to set a pseudo font family on the HTML
+ * element. If you need to set default font properties of any kind use the BODY
+ * element as these can be overridden using font theme settings.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\0000341}}
+html {
+  background: #e7e6e2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\0000345}}
+body {
+  font-family: "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 87.5%;
+}
+
+/* =============================================================================
+ *   HTML Elements
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003140}}
+pre,
+code,
+tt,
+samp,
+kbd,
+var {
+  font-family: Consolas, Monaco, "Courier New", Courier, monospace, sans-serif;
+}
+
+/* =============================================================================
+ *   Wrappers
+ * ========================================================================== */
+/*
+ * Page wrapper, includes the .container class which sets the overall page or section width
+ * Main wrapper in page.tpl.php, the .container class sets the width of the page, do not add width to it!
+ */
+/*
+ * Wraps all header elements - branding and .region-header
+ */
+/*
+ * Wraps the sidebars the content column
+ */
+/*
+ * Main content column wrapper
+ */
+/*
+ * Wraps the main-content-header, the content region and feed-icons. Use this wrapper to style the entire main content column
+ */
+/*
+ * Wraps the content region, avoid applying styles to this wrapper, its used mainly for position and invisible gutters and can be problematic to style
+ */
+/*
+ * Footer wrapper
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003191}}
+#footer {
+  text-align: center;
+  color: white;
+}
+
+/*
+ * Panels may need additional margin wrangling when in the $content region
+ */
+/*
+ * Full Width Wrappers
+ * These are used in the optional page--full-width-wrappers.tpl.php template.
+ * All have internal .container classes. In the full width wrapper template the
+ * .container classes set the width or max-width of the contained element - you
+ * can style this but never add any width/margin/padding/borders etc to .container
+ */
+/*
+ * Wraps #page
+ */
+/*
+ * Wraps the leaderboard
+ */
+/*
+ * Wraps the header
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003230}}
+#header-wrapper {
+  /* Debug styles, is this working */
+  background: #404040;
+}
+
+/*
+ * Wraps the nav elements
+ */
+/*
+ * Wraps breadcrumb
+ */
+/*
+ * Wraps messages and help
+ */
+/*
+ * Wraps the secondary content/preface region
+ */
+/*
+ * Wraps the main content column
+ */
+/*
+ * Wraps the tertiary content/postfix region
+ */
+/*
+ * Footer wrapper
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003288}}
+#footer-wrapper {
+  /* Debug styles, is this working? */
+  background: #a7a6a4;
+}
+
+/* =============================================================================
+ *   Branding
+ * ========================================================================== */
+/*
+ * Wraps all the branding elements, logo, name and slogan
+ */
+/*
+ * Logo
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003309}}
+#logo {
+  padding: 10px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003312}}
+#logo img {
+  vertical-align: bottom;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003316}}
+#block-logo-block-logo {
+  float: left;
+  margin: 0;
+  padding: 10px 0;
+}
+
+/*
+ * Wrapper for the site name and slogan (hgroup)
+ */
+/*
+ * Site name (h1)
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003331}}
+#site-name {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003337}}
+#site-name a:link, #site-name a:visited {
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003342}}
+#site-name a:hover, #site-name a:focus {
+  text-decoration: underline;
+}
+
+/*
+ * Site slogan (h2)
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003352}}
+#site-slogan {
+  margin: 0;
+}
+
+/* =============================================================================
+ *   Page content header
+ * ========================================================================== */
+/*
+ * Main content header wraps the page title, tabs and actions links
+ */
+/*
+ * The main page title (h1)
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003370}}
+#page-title {
+  margin: 0;
+}
+
+/* =============================================================================
+ *   Misc Global Styles
+ * ========================================================================== */
+/*
+ * Feed icons
+ */
+/*
+ * Aggregator feed source
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003388}}
+#aggregator .feed-source .feed-icon {
+  display: inline;
+  float: none;
+  margin-right: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003396}}
+.feed-details dt,
+.feed-details dd {
+  display: inline;
+  margin: 0;
+}
+
+/*
+ * Generic styles for the more link
+ */
+/*
+ * Generic styles for links. See the ul.links declaration in node and comment stylesheets
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003411}}
+ul.links {
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003415}}
+ul.links.inline {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003419}}
+ul.links li {
+  display: inline;
+  list-style: none;
+  padding: 0 10px 0 0;
+}
+
+/*
+ * Search results are an ordered list so reset the margin
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003430}}
+.search-results {
+  margin: 0;
+}
+
+/* =============================================================================
+ *   Regions
+ * ========================================================================== */
+/*
+ * Standard region wrapper, don't add width to any regions, you will bork the layout - no margin, padding or borders etc
+ */
+/*
+ * Regions have an inner div - perfect for adding margin, padding or borders
+ */
+/*
+ * Regions can be nested, such as when using Panels
+ */
+/*
+ * Header region, embedded in the #header
+ */
+/*
+ * Generally used to output Drupals help block, if the help module is enabled
+ */
+/*
+ * Secondary content
+ */
+/*
+ * Sits above the main content header, like a content-top region
+ */
+/*
+ * Sits below the main content, like a content-bottom region
+ */
+/*
+ * Sidebars - targets both
+ */
+/*
+ * First sidebar
+ */
+/*
+ * Second sidebar
+ */
+/*
+ * Tertiary content
+ */
+/*
+ * Footer region
+ */
+/* =============================================================================
+ *   Links
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003521}}
+a {
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003531}}
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+/* =============================================================================
+ *   Primary, Secondary and Menu Bar region menus
+ * ========================================================================== */
+/*
+ * Use one of the following id's for granular control:
+ *  - #menu-bar (menu bar region)
+ *  - #primary-menu (main menu)
+ *  - #secondary-menu (secondary/user menu)
+ * You can target all of these with .nav or div[id$="menu-bar"]
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003549}}
+.nav {
+  clear: both;
+  margin: 10px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003554}}
+.nav ul,
+.nav ul.menu {
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003560}}
+.nav li,
+.nav ul.menu li {
+  display: inline;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003569}}
+.nav li a,
+.nav ul.menu li a {
+  display: block;
+  white-space: nowrap;
+  padding: 0 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003580}}
+.nav .block {
+  margin-bottom: 0;
+}
+
+/* =============================================================================
+ *   Superfish
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003590}}
+ul.sf-menu {
+  margin-bottom: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003593}}
+ul.sf-menu a {
+  border-left: 0;
+  border-top: 0;
+  padding: 0 10px;
+  text-decoration: none;
+  height: 2.5em;
+  line-height: 2.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003607}}
+ul.sf-menu li:hover, ul.sf-menu li.sfHover {
+  outline: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003615}}
+ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
+  outline: 0;
+}
+
+/*
+ * Superfish blocks
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003629}}
+.block-superfish ul {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003640}}
+.block-superfish li {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/*
+ * Vertical style
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003650}}
+.sf-vertical {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003653}}
+.sf-vertical li {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003659}}
+.sf-vertical li:hover ul, .sf-vertical li.sfHover ul {
+  left: 100%;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003666}}
+.sf-vertical li a {
+  padding: 0 10px;
+}
+
+/*
+ * Navbar style
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003676}}
+.sf-navbar {
+  padding-bottom: 0 !important;
+}
+
+/*
+ * Sensible padding for the default style
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003684}}
+.sf-menu.sf-style-default a {
+  padding: 0 10px;
+}
+
+/* =============================================================================
+ *   Menus, usually blocks
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003693}}
+ul.menu {
+  padding-left: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003696}}
+ul.menu ul {
+  padding-left: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003704}}
+ul.menu li {
+  margin: 0;
+}
+
+/* If li.content exists it's a problem, so reset the padding */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003733}}
+.block .menu li.content {
+  padding: 0;
+}
+
+/* =============================================================================
+ *   Book navigation menu
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003750}}
+.book-navigation .page-up {
+  /* Prevent text wrapping to a new line, assumes English "up" is used (two characters) */
+  min-width: 2em;
+  white-space: nowrap;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003756}}
+.book-navigation .menu {
+  margin-left: 0;
+}
+
+/* =============================================================================
+ *   Breadcrumbs
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003766}}
+#breadcrumb {
+  margin: 10px 0;
+  /* If the label is set to show in theme settings the label class is added */
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003770}}
+#breadcrumb .breadcrumb-label {
+  font-size: 1em;
+  display: inline;
+  padding-right: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003775}}
+#breadcrumb .breadcrumb-label:after {
+  content: ":";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003780}}
+#breadcrumb ol {
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003785}}
+#breadcrumb .with-breadcrumb-label ol {
+  display: inline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003789}}
+#breadcrumb li {
+  list-style: none;
+  display: inline;
+}
+
+/* =============================================================================
+ *   Pagers
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003816}}
+ul.pager {
+  clear: both;
+  margin: 0;
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003823}}
+.item-list ul.pager li {
+  margin-right: 3px !important;
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003829}}
+ul.pager li {
+  background-image: none;
+  display: inline;
+  list-style-type: none;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003835}}
+ul.pager li.pager-current {
+  font-weight: 700;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003841}}
+.block ul.pager li {
+  margin: 0;
+}
+
+/*
+ * Theme the various states of pager links
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003850}}
+ul.pager li a {
+  font-size: 10px;
+  height: 13px;
+  width: 13px;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  background-color: #c9c7c0;
+  color: #c9c7c0;
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003874}}
+ul.pager li.pager-current {
+  height: 13px;
+  width: 13px;
+  background-color: #588d02;
+  color: #588d02;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  font-size: 10px;
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003885}}
+ul.pager li.pager-first {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003886}}
+ul.pager li.pager-previous {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003887}}
+ul.pager li.pager-next {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003888}}
+ul.pager li.pager-last {
+  display: none;
+}
+
+/* =============================================================================
+ *   Skip Navigation
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003896}}
+#skip-link {
+  left: 50%;
+  margin-left: -6.5em;
+  margin-top: 0;
+  padding: 0 0.5em;
+  position: absolute;
+  width: 12em;
+  z-index: 50;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003905}}
+#skip-link a {
+  background: #444;
+  background: rgba(0, 0, 0, 0.6);
+  color: #e7e6e2;
+  display: block;
+  line-height: 2;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003916}}
+#skip-link a:link, #skip-link a:visited {
+  background: #444;
+  background: rgba(0, 0, 0, 0.6);
+  color: #e7e6e2;
+  display: block;
+  line-height: 2;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003928}}
+#skip-link a:hover, #skip-link a:focus, #skip-link a:active {
+  outline: 0;
+}
+
+/* =============================================================================
+ *   Tabs (local tasks)
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003939}}
+#tasks {
+  margin-bottom: 15px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003944}}
+ul.primary {
+  border-bottom-color: #c9c7c0;
+  margin: 20px 0;
+  padding: 0 0 0 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003949}}
+ul.primary li {
+  display: block;
+  float: left;
+  margin: 0 1px -1px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003954}}
+ul.primary li a {
+  background-color: #c9c7c0;
+  border-color: #c9c7c0;
+  margin-right: 1px;
+  padding: 0 10px;
+  display: block;
+  float: left;
+  height: 1.5em;
+  line-height: 1.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003965}}
+ul.primary li a:hover, ul.primary li a:focus {
+  background-color: #a7a6a4;
+  border-color: #c9c7c0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003975}}
+ul.primary li.active a,
+ul.primary li.active a:hover,
+ul.primary li.active a:focus {
+  background-color: #e7e6e2;
+  border-bottom-color: #e7e6e2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003983}}
+ul.secondary {
+  border-bottom: 1px solid #c9c7c0;
+  margin: 1em 0 0;
+  padding: 0 .3em 1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003988}}
+ul.secondary li {
+  border-right: 0;
+  list-style: none;
+  padding: 0 10px 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\00003995}}
+ul.secondary li a:hover, ul.secondary li a.active {
+  border-bottom: none;
+  text-decoration: underline;
+}
+
+/* =============================================================================
+ *   Action links
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031008}}
+ul.action-links {
+  margin: 20px 0 0;
+  list-style: none;
+}
+
+/* =============================================================================
+ *  Field Styling
+ * ========================================================================== */
+/*
+ * Wrapper for any field
+ */
+/*
+ * Above and inline classes are on the field wrapper
+ */
+/*
+ * When labels are set to inline in field display settings the clearfix class is automatically added
+ */
+/*
+ * Labels are h2 in Adaptivetheme. Use a strong selector to mitigate unwanted ineritance issues
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031041}}
+.field-label {
+  font-size: 1em;
+  font-weight: 700;
+  font-family: inherit;
+  line-height: inherit;
+  margin-bottom: 0;
+}
+
+/*
+ * Field types (Core)
+ */
+/*
+ * Image fields use the <figure> and <figcaption> elements from HTML5
+ */
+/*
+ * Taxonomy
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031070}}
+.field-type-taxonomy-term-reference {
+  /* The same bottom margin as p, blockquote, ul, ol and dl */
+  margin-bottom: 1.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031075}}
+.field-type-taxonomy-term-reference.field-label-inline .field-items {
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031080}}
+.field-type-taxonomy-term-reference.field-label-inline .field-item {
+  display: inline;
+  list-style: none;
+  padding: 0 10px 0 0;
+}
+
+/*
+ * Text
+ */
+/*
+ * Long text
+ */
+/*
+ * Text with summary
+ */
+/*
+ * File
+ */
+/*
+ * Number/Integer
+ */
+/*
+ * Decimal
+ */
+/*
+ * Number float
+ */
+/*
+ * List
+ */
+/*
+ * List boolean
+ */
+/*
+ * List integer
+ */
+/*
+ * List float
+ */
+/*
+ * Field types (Contrib)
+ */
+/*
+ * Named fields
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031174}}
+.field-name-title h2 {
+  margin: 0;
+  font-weight: 600 !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031177}}
+.field-name-title h2.field-label {
+  color: #a7a6a4;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031180}}
+.field-name-title h2 a {
+  color: #404040;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031187}}
+.field-name-node-link a,
+.field-name-ir-a-productos a {
+  color: #588d02;
+  background: url("../images/read-more.png") top right no-repeat;
+  height: 20px;
+  display: block;
+  width: 100px;
+  padding: 14px 0;
+  float: right;
+}
+
+/*
+ * Underscores in field name are replaced with dashes
+ */
+/*
+ * Image Alignment Theme Settings - included here so you can easily override 
+ */
+/*
+ * Float none setting
+ */
+/*
+ * Float left setting
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031219}}
+.ia-l .field-type-image figure,
+.iat-l .field-type-image figure {
+  margin: 5px 20px 15px 0;
+}
+
+/*
+ * Centered setting
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031228}}
+.ia-c .field-type-image figure,
+.iat-c .field-type-image figure {
+  margin: 5px auto 15px;
+}
+
+/*
+ * Float right setting
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031237}}
+.ia-r .field-type-image figure,
+.iat-r .field-type-image figure {
+  margin: 5px 0 15px 20px;
+}
+
+/* =============================================================================
+ *   Block Styling
+ * ========================================================================== */
+/*
+ * Main wrapper for most blocks, block_system_main does not have it
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031250}}
+.block {
+  margin-bottom: 20px;
+}
+
+/*
+ * Inner wrapper for most blocks, good for margin, padding and borders, block_system_main does not have it
+ */
+/*
+ * The first block in the region
+ */
+/*
+ * The last block in the region
+ */
+/*
+ * Zebra striping for each block in the region
+ */
+/*
+ * Zebra striping for each block in the region
+ */
+/*
+ * Block title
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031288}}
+.block-title {
+  margin: 0;
+  text-align: left;
+  background-color: #404040;
+  color: white;
+  padding: 1px 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  margin-bottom: 10px;
+  font-weight: 600 !important;
+}
+
+/*
+ * Block content wrapper
+ */
+/*
+ * Match item list and block menu margin and padding
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031314}}
+.block-content ul,
+.block-content ol {
+  padding: 0 0 0 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031318}}
+.block-content li {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Block for the latest news items in the first category
+ */
+/*
+ * Block for the latest news items in the first feed
+ */
+/*
+ * First block created with "Add block" link
+ */
+/*
+ * "Recent blog posts" block
+ */
+/*
+ * "Book navigation" block for the current book's table of contents
+ */
+/*
+ * "Recent comments" block
+ */
+/*
+ * "Active forum topics" block
+ */
+/*
+ * "New forum topics" block
+ */
+/*
+ * Language switcher block
+ */
+/*
+ * Custom menu block
+ */
+/*
+ * "Recent content" block
+ */
+/*
+ * "Syndicate" block for primary RSS feed; see also page.css's .feed-icon
+ */
+/*
+ * "Most recent poll" block
+ */
+/*
+ * "Author information" block for the profile of the page's author
+ */
+/*
+ * "Search form" block
+ */
+/*
+ * "Shortcuts" block
+ */
+/*
+ * "Popular content" block
+ */
+/*
+ * "Main menu" block
+ */
+/*
+ * "Management" block for Drupal management menu
+ */
+/*
+ * "Navigation" block for Drupal navigation menu
+ */
+/*
+ * "User menu" block for Drupal user menu
+ */
+/*
+ * "System help" block
+ */
+/*
+ * "Main page content" block
+ */
+/*
+ * "Powered by Drupal" block
+ */
+/*
+ * "User login form" block
+ */
+/*
+ * "Who's new" block for a list of the newest users
+ */
+/*
+ * "Who's online" block for a list of the online users
+ */
+/* =============================================================================
+ *   Node Styling
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031491}}
+.node {
+  margin-bottom: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031500}}
+.node.node-teaser {
+  margin-bottom: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031502}}
+.node.node-teaser .group-left {
+  float: left;
+  width: 45%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031506}}
+.node.node-teaser .group-right {
+  float: left;
+  width: 50%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031510}}
+.node.node-teaser .group-footer {
+  clear: both;
+  padding-top: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031522}}
+.node .node-title {
+  margin: 0;
+}
+
+/*
+ * All nodes are given a node-FOO class that describes the type of content that
+ * it is. If you create a new content type called "my-custom-type", it will
+ * receive a "node-my-custom-type" class.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031564}}
+.page-node-58 .node-page h3 {
+  font-size: 2em;
+  width: 500px;
+  text-align: center;
+  margin: 0px auto 40px auto;
+  line-height: 1.3em;
+  font-weight: 500;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031584}}
+.node-solucion.node-full .field-name-field-intro {
+  font-weight: 600;
+  line-height: 1.6em;
+  font-size: 1em;
+  width: 300px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031590}}
+.node-solucion.node-full .group-left {
+  width: 40%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031593}}
+.node-solucion.node-full .group-right {
+  width: 60%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031599}}
+.node-capacidad.node-teaser {
+  border-bottom: 3px solid #c9c7c0;
+  height: 220px;
+  width: 325px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031603}}
+.node-capacidad.node-teaser .group-header {
+  background: url("../images/fondo-con-flecha.png") top right no-repeat;
+  color: white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  padding: 1px 20px;
+  margin-bottom: 10px;
+  height: 60px;
+  line-height: 2.7em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031614}}
+.node-capacidad.node-teaser .group-left {
+  width: 80px;
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031618}}
+.node-capacidad.node-teaser .group-right {
+  float: left;
+  width: 224px;
+  margin: 0px 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031626}}
+.node-experiencia.node-teaser {
+  border-bottom: 3px solid #c9c7c0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031629}}
+.node-experiencia.node-teaser .field-name-field-url a {
+  color: #588d02;
+}
+
+/* =============================================================================
+ *   Comment Styling - Comments, comment wrapper, comment form
+ * ========================================================================== */
+/*
+ * Wrapper for the list of comments and its titles
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031643}}
+#comments {
+  margin: 1.5em 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031647}}
+#comments h2.comment-title {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031651}}
+#comments h2.comment-form {
+  margin: 0;
+}
+
+/*
+ * Wrapper for a single comment
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031661}}
+.comment {
+  margin-bottom: 20px;
+}
+
+/*
+ * Comment title
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031692}}
+.comment-title {
+  margin: 0;
+}
+
+/*
+ * Comment states
+ */
+/*
+ * Preview of the comment before submitting new or updated comment
+ */
+/*
+ * "New" marker for comments that are new for the current user
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031724}}
+.new {
+  color: #cc0000;
+}
+
+/*
+ * Nested comments are indented
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031732}}
+.indented {
+  margin-left: 40px;
+}
+
+/* =============================================================================
+ *   Forms
+ * ========================================================================== */
+/*
+ * Wrapper for a form element (or group of form elements) and its label
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031748}}
+.form-item input.error,
+.form-item textarea.error,
+.form-item select.error {
+  border: 1px solid #cc0000;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031752}}
+.form-item label {
+  font-weight: 700;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031759}}
+.form-item .description {
+  font-size: 0.85em;
+}
+
+/*
+ * Highlight marks and form required mark
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031773}}
+.marker,
+.form-required {
+  color: #cc0000;
+}
+
+/*
+ * The submit button
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031787}}
+.container-inline div,
+.container-inline label {
+  display: inline;
+}
+
+/*
+ * Define consistent borders
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031795}}
+fieldset {
+  border: 1px solid #c9c7c0;
+}
+
+/*
+ * Tips for Drupal's input formats
+ */
+/*
+ * Buttons used by contrib modules like Media
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031809}}
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+
+/*
+ * Password confirmation
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031818}}
+.password-parent,
+.confirm-parent {
+  margin: 0;
+}
+
+/* =============================================================================
+ *   Tables
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031827}}
+table {
+  margin: 10px 0;
+  padding: 0;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031832}}
+table.sticky-header {
+  z-index: 10;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031843}}
+table,
+thead,
+tbody,
+tr,
+th,
+td {
+  border-color: #c9c7c0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031850}}
+table,
+td,
+th {
+  vertical-align: middle;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031857}}
+caption,
+th,
+td {
+  text-align: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031862}}
+thead tr {
+  font-weight: 700;
+  background-color: #e5e5e5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031869}}
+td,
+th {
+  border-bottom: 0;
+  margin: 0;
+  padding: 5px 7px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031879}}
+tbody tr {
+  border-top: 1px solid #c9c7c0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031884}}
+tr {
+  /* Table row striping */
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031886}}
+tr.odd {
+  background: #e7e6e2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031893}}
+tr.info, tr.even, tr:nth-child(2n+2) {
+  border-bottom: 0;
+  background-color: #c9c7c0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031902}}
+tr.odd td.active {
+  background-color: #a7a6a4;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031906}}
+tr.even td.active {
+  background-color: #ebebeb;
+}
+
+/*
+ * Forum tables
+ * Core sets white-space to nowrap, which makes no sense
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031934}}
+#forum td .created,
+#forum td .posts,
+#forum td .topics,
+#forum td .last-reply,
+#forum td .replies,
+#forum td .pager {
+  white-space: normal;
+}
+
+/* =============================================================================
+ *   Messages
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031945}}
+div.messages {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031950}}
+div.messages ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*
+ * Unpublished nodes
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000031991}}
+.node-unpublished p.unpublished,
+.comment-unpublished p.unpublished {
+  color: pink;
+  color: rgba(239, 170, 170, 0.4);
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  text-align: center;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/_custom\.scss}line{font-family:\00003190}}
+.ie6-7 .node-unpublished p.unpublished > *, .ie6-7
+.comment-unpublished p.unpublished > * {
+  position: relative;
+}
+
+/* =============================================================================
+ *    Maintenance pages
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032002}}
+.maintenance-page .container {
+  padding: 40px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032007}}
+.maintenance-page #site-name,
+.maintenance-page #page-title {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032014}}
+.db-offline .container {
+  margin: 0 auto;
+  padding: 40px 0;
+  width: 100%;
+  max-width: 960px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032021}}
+.db-offline div.messages {
+  margin: 20px 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032025}}
+.db-offline #content {
+  padding: 20px 0;
+}
+
+/* =============================================================================
+ *   Misc overrides for contrib modules
+ * ========================================================================== */
+/*
+ * Admin menu overrides
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032038}}
+#admin-menu {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Devel Module
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032047}}
+.dev-query {
+  background: #a7a6a4;
+  padding: 30px;
+}
+
+/*
+ * Styleguide module tweaks
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032056}}
+#styleguide-header {
+  padding: 0 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032059}}
+#styleguide-header .item-list {
+  font-family: inherit;
+  margin: 0 20px 20px 0;
+  min-height: 260px;
+  width: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032069}}
+#block-menu-block-1 {
+  float: right;
+  margin: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032073}}
+#block-menu-block-1 ul.menu li {
+  display: inline;
+  margin: 0 15px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032081}}
+#block-menu-block-1 ul.menu li:hover, #block-menu-block-1 ul.menu li.active-trail, #block-menu-block-1 ul.menu li.active {
+  background-color: #588d02;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032084}}
+#block-menu-block-1 ul.menu li a {
+  color: white;
+  text-transform: uppercase;
+  padding: 8px 8px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032088}}
+#block-menu-block-1 ul.menu li a:hover {
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032096}}
+#block-block-1 {
+  padding: 15px;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032099}}
+#block-block-1 #copy {
+  margin: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032102}}
+#block-block-1 img {
+  vertical-align: top;
+  margin-right: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032106}}
+#block-block-1 span {
+  padding: 13px 0px;
+  display: inline-block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032113}}
+#block-block-2 .block-inner {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032120}}
+#block-webform-client-block-3 .location-1 h2 {
+  margin: 0;
+  color: #588d02;
+  font-weight: 300;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032127}}
+#block-webform-client-block-3 .location-2,
+#block-webform-client-block-3 .location-3 {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032131}}
+#block-webform-client-block-3 .field-name-body p {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032134}}
+#block-webform-client-block-3 .field-name-body a {
+  color: #f4442d;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032139}}
+#block-webform-client-block-3 #webform-component-email,
+#block-webform-client-block-3 #webform-component-telefono {
+  float: left;
+  margin-top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032143}}
+#block-webform-client-block-3 #edit-submitted-nombre {
+  width: 100%;
+  border: 1px solid #eee;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032148}}
+#block-webform-client-block-3 #edit-submitted-email,
+#block-webform-client-block-3 #edit-submitted-telefono {
+  border: 1px solid #eee;
+  width: 170px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032152}}
+#block-webform-client-block-3 #edit-submitted-email {
+  margin-right: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032155}}
+#block-webform-client-block-3 #edit-submitted-comentarios {
+  border: 1px solid #eee;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032158}}
+#block-webform-client-block-3 input[type="submit"] {
+  background-color: #588d02;
+  color: white;
+  padding: 5px 10px;
+  float: right;
+  border: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032166}}
+.ajax-progress-throbber {
+  display: none;
+}
+
+/*
+  Bloques de productos y soluciones para el home.
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032172}}
+#block-views-soluciones-block .view-content,
+#block-views-productos-block .view-content {
+  height: 247px;
+  border-bottom: 3px solid #c9c7c0;
+  margin-bottom: 3px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032176}}
+#block-views-soluciones-block .view-content .group-right,
+#block-views-productos-block .view-content .group-right {
+  height: 190px;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032180}}
+#block-views-soluciones-block .view-content .field-name-title,
+#block-views-productos-block .view-content .field-name-title {
+  line-height: 1.9em;
+  margin-bottom: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032186}}
+#block-views-soluciones-block .view-content .field-name-body p,
+#block-views-soluciones-block .view-content .field-name-field-intro p,
+#block-views-productos-block .view-content .field-name-body p,
+#block-views-productos-block .view-content .field-name-field-intro p {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032189}}
+#block-views-soluciones-block .view-content .field-name-body li,
+#block-views-soluciones-block .view-content .field-name-field-intro li,
+#block-views-productos-block .view-content .field-name-body li,
+#block-views-productos-block .view-content .field-name-field-intro li {
+  list-style-position: inside;
+  list-style-image: url("../images/bullet-green.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032197}}
+#block-block-3 {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032199}}
+#block-block-3 #twitter-widget-0 {
+  width: 100% !important;
+  box-shadow: none;
+  margin: 0;
+  background-color: #e7e6e2;
+  font-family: 'Open Sans';
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032208}}
+#block-views-soluciones-block-1 {
+  margin-top: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032210}}
+#block-views-soluciones-block-1 .block-inner {
+  background-color: #588d02;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032216}}
+#block-views-soluciones-block-1 h2.block-title {
+  float: left;
+  background: none;
+  margin-top: 70px;
+  font-size: 2em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032222}}
+#block-views-soluciones-block-1 .block-content {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032224}}
+#block-views-soluciones-block-1 .block-content .views-row {
+  float: left;
+  width: 150px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px 37px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032231}}
+#block-views-soluciones-block-1 .block-content .views-row .views-field-title a {
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032233}}
+#block-views-soluciones-block-1 .block-content .views-row .views-field-title a.active {
+  display: block;
+  font-size: 0.9em;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  background-color: #404040;
+  padding: 2px;
+}
+
+/*
+  Bloque de productos para la sección interna
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032250}}
+#block-views-productos-block-1 {
+  margin-top: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032252}}
+#block-views-productos-block-1 h2.block-title {
+  background-color: #588d02;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032255}}
+#block-views-productos-block-1 table {
+  border: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032257}}
+#block-views-productos-block-1 table tr {
+  border: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032259}}
+#block-views-productos-block-1 table tr td {
+  font-size: 0.9em;
+  vertical-align: top;
+  text-align: center;
+  width: 200px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032265}}
+#block-views-productos-block-1 table tr td ul li {
+  list-style: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032269}}
+#block-views-productos-block-1 table tr td .views-field-title {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032273}}
+#block-views-productos-block-1 table tr td p {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032284}}
+.node.view-mode-full .group-left h1,
+.node.node-full .group-left h1 {
+  margin-top: 0;
+  background: none;
+  color: #404040;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032294}}
+.node.view-mode-full .field-name-body ul li,
+.node.node-full .field-name-body ul li {
+  padding-left: 20px;
+  background-image: url("../images/bullet-small.png");
+  background-repeat: no-repeat;
+  background-position: 0 2px;
+  list-style-type: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032305}}
+.view-nuestras-capacidades table {
+  border: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032308}}
+.view-nuestras-capacidades table tbody tr {
+  border: none;
+  background: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032311}}
+.view-nuestras-capacidades table tbody tr td {
+  vertical-align: top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032316}}
+.view-nuestras-capacidades table caption {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032324}}
+.page-node h1,
+.page-experiencia h1 {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  background-color: #588d02;
+  color: white;
+  padding: 3px 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032337}}
+.page-experiencia .views-row,
+#block-views-experiencia-block-1 .views-row {
+  float: left;
+  width: 363px;
+  margin: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032341}}
+.page-experiencia .views-row .field-name-body,
+#block-views-experiencia-block-1 .views-row .field-name-body {
+  height: 130px;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032346}}
+.page-experiencia .ajax-progress-throbber,
+#block-views-experiencia-block-1 .ajax-progress-throbber {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032349}}
+#block-views-experiencia-block-1 h2.block-title {
+  background-color: #588d02;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032353}}
+#block-views-clientes-y-alianzas-block {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032356}}
+#block-views-clientes-y-alianzas-block .view-filters .form-type-radio {
+  float: left;
+  text-transform: uppercase;
+  color: #404040;
+  font-weight: 300;
+  border-bottom: 1px solid #c9c7c0;
+  padding: 7px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032363}}
+#block-views-clientes-y-alianzas-block .view-filters .form-type-radio:hover {
+  background-color: #588d02;
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032368}}
+#block-views-clientes-y-alianzas-block .view-filters .form-type-bef-checkbox {
+  text-transform: uppercase;
+  color: #404040;
+  font-weight: 300;
+  border-bottom: 1px solid #c9c7c0;
+  padding: 7px;
+  width: 300px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032375}}
+#block-views-clientes-y-alianzas-block .view-filters .form-type-bef-checkbox:hover {
+  background-color: #588d02;
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032381}}
+#block-views-clientes-y-alianzas-block .views-row {
+  width: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032383}}
+#block-views-clientes-y-alianzas-block .views-row .views-field-field-image {
+  padding: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032388}}
+#block-block-4 {
+  text-align: center;
+  width: 50%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032394}}
+.page-node-57 .nosotros-0 {
+  float: left;
+  width: 350px;
+  margin: 10px;
+  height: 600px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032400}}
+.page-node-57 .nosotros-1 {
+  float: left;
+  width: 350px;
+  margin: 10px;
+  height: 392px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032406}}
+.page-node-57 .nosotros-2 {
+  float: left;
+  width: 350px;
+  margin: 10px;
+  height: 392px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032412}}
+.page-node-57 .nosotros-3 {
+  float: left;
+  width: 350px;
+  margin: 10px;
+  height: 300px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032418}}
+.page-node-57 .nosotros-4 {
+  float: left;
+  width: 350px;
+  margin: 10px;
+  height: 300px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032424}}
+.page-node-57 h3 {
+  background-color: #404040;
+  color: white;
+  margin-top: 0;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032436}}
+.page-node-58 #block-webform-client-block-3 {
+  width: 50%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032440}}
+.page-node-58 #block-webform-client-block-3 .location-1,
+.page-node-58 #block-webform-client-block-3 .location-2,
+.page-node-58 #block-webform-client-block-3 .location-3 {
+  display: block;
+  float: left;
+  width: 32%;
+  margin: 10px 3px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032445}}
+.page-node-58 #block-webform-client-block-3 .location-1 h2,
+.page-node-58 #block-webform-client-block-3 .location-2 h2,
+.page-node-58 #block-webform-client-block-3 .location-3 h2 {
+  color: #588d02;
+  font-size: 1.2em;
+  font-weight: 300;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032453}}
+.page-node-58 #block-webform-client-block-3 h2.block-title {
+  color: #404040;
+  background: none;
+  padding: 0;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032462}}
+.page-node-58 #block-webform-client-block-3 #edit-submitted-email,
+.page-node-58 #block-webform-client-block-3 #edit-submitted-telefono {
+  width: 264px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032468}}
+#block-views-banners-del-home-block {
+  background-color: black;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032470}}
+#block-views-banners-del-home-block .block-inner {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032473}}
+#block-views-banners-del-home-block #views_slideshow_cycle_teaser_section_banners_del_home-block {
+  margin: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032476}}
+#block-views-banners-del-home-block #widget_pager_bottom_banners_del_home-block {
+  text-align: center;
+  opacity: .8;
+  margin-bottom: 10px;
+  margin-top: 0;
+  line-height: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032482}}
+#block-views-banners-del-home-block #widget_pager_bottom_banners_del_home-block .views-slideshow-pager-field-item {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032484}}
+#block-views-banners-del-home-block #widget_pager_bottom_banners_del_home-block .views-slideshow-pager-field-item .views-content-counter {
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  color: white;
+  font-size: 0px;
+  background-color: #a7a6a4;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032494}}
+#block-views-banners-del-home-block #widget_pager_bottom_banners_del_home-block .views-slideshow-pager-field-item .views-content-counter:hover {
+  background-color: #588d02;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dayscript\/public_html\/dayscript\.com\/sites\/all\/themes\/at_dayscript\/sass\/global\.styles\.scss}line{font-family:\000032499}}
+#block-views-banners-del-home-block #widget_pager_bottom_banners_del_home-block .views-slideshow-pager-field-item.active .views-content-counter {
+  background-color: #588d02;
+}
